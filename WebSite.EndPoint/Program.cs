@@ -1,3 +1,4 @@
+using Infrastructure.IdentityConfigs;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
 
@@ -15,9 +16,19 @@ builder.Services.AddDbContext<DataBaseContext>(option =>
     option.UseSqlServer(connection, b => b.MigrationsAssembly("Persistence"));
 });
 
-builder.Services.AddDbContext<IdentityDataBaseContext>(option =>
-{
-    option.UseSqlServer(connection, b => b.MigrationsAssembly("Persistence"));
+//builder.Services.AddDbContext<IdentityDataBaseContext>(option =>
+//{
+//    option.UseSqlServer(connection, b => b.MigrationsAssembly("Persistence"));
+//});
+builder.Services.AddIdentityService(configuration);
+builder.Services.AddAuthorization();
+
+builder.Services.ConfigureExternalCookie(option => { 
+option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    option.LoginPath = "/Account/login";
+    option.AccessDeniedPath = "/Account/AccessDenied";
+    option.SlidingExpiration = true;
+
 });
 
 var app = builder.Build();
@@ -35,6 +46,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
