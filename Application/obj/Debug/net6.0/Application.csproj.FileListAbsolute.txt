@@ -1,0 +1,15 @@
+F:\gitProjects\new\CleanProject\Application\bin\Debug\net6.0\Application.deps.json
+F:\gitProjects\new\CleanProject\Application\bin\Debug\net6.0\Application.dll
+F:\gitProjects\new\CleanProject\Application\bin\Debug\net6.0\Application.pdb
+F:\gitProjects\new\CleanProject\Application\bin\Debug\net6.0\Domain.dll
+F:\gitProjects\new\CleanProject\Application\bin\Debug\net6.0\Domain.pdb
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.dll
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\refint\Application.dll
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\Application.pdb
+F:\gitProjects\new\CleanProject\Application\obj\Debug\net6.0\ref\Application.dll
