@@ -46,6 +46,10 @@
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.16.1, )"
             }
           },
           "imports": [

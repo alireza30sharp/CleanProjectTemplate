@@ -147,6 +147,18 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "MongoDB.Bson/2.16.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -441,6 +453,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MongoDB.Bson/2.16.1": {
+      "sha512": "d647KTPQ7hWqJmvCg80iiVdm239llaUwMyIeRF/0zKpN+ddRWh9jT/g6R6WQrmi4qd7yodvv/Jn0rpEqh4QN8g==",
+      "type": "package",
+      "path": "mongodb.bson/2.16.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "lib/net472/MongoDB.Bson.dll",
+        "lib/net472/MongoDB.Bson.xml",
+        "lib/netstandard2.0/MongoDB.Bson.dll",
+        "lib/netstandard2.0/MongoDB.Bson.xml",
+        "lib/netstandard2.1/MongoDB.Bson.dll",
+        "lib/netstandard2.1/MongoDB.Bson.xml",
+        "mongodb.bson.2.16.1.nupkg.sha512",
+        "mongodb.bson.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
       "type": "package",
@@ -494,7 +525,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Extensions.Identity.Stores >= 6.0.6"
+      "Microsoft.Extensions.Identity.Stores >= 6.0.6",
+      "MongoDB.Bson >= 2.16.1"
     ]
   },
   "packageFolders": {
@@ -543,6 +575,10 @@
           "Microsoft.Extensions.Identity.Stores": {
             "target": "Package",
             "version": "[6.0.6, )"
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "[2.16.1, )"
           }
         },
         "imports": [

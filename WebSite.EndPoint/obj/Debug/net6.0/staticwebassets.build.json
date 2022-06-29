@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l4LDsRjoVfASZYfvt0d3UB6fk5SZDNd7cIZiAaY2z5g=",
+  "Hash": "yeP18Nm0cDXT7onNx2baQSeBXAcr2c29ECv/RJ57UFU=",
   "Source": "WebSite.EndPoint",
   "BasePath": "_content/WebSite.EndPoint",
   "Mode": "Default",
@@ -3449,6 +3449,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "G:\\Project\\cleanProject\\CleanProjectTemplate\\WebSite.EndPoint\\wwwroot\\js\\SignalROnlineVisitorService.js",
+      "SourceId": "WebSite.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Project\\cleanProject\\CleanProjectTemplate\\WebSite.EndPoint\\wwwroot\\",
+      "BasePath": "_content/WebSite.EndPoint",
+      "RelativePath": "js/SignalROnlineVisitorService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\SignalROnlineVisitorService.js"
     },
     {
       "Identity": "G:\\Project\\cleanProject\\CleanProjectTemplate\\WebSite.EndPoint\\wwwroot\\js\\site.js",

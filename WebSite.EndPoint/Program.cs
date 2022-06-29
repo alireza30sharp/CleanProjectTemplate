@@ -1,6 +1,11 @@
+using Application.Interfaces.Contexts;
+using Application.Visitors.SaveVisitorInfo;
+using Application.Visitors.VisitorOnline;
 using Infrastructure.IdentityConfigs;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
+using Persistence.Contexts.MongoContext;
+using WebSite.EndPoint.Utilities.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +35,11 @@ option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
     option.SlidingExpiration = true;
 
 });
+
+builder.Services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
+builder.Services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
+builder.Services.AddTransient<IIVisitorOnlineService, VisitorOnlineService>();
+builder.Services.AddScoped<SaveVisitorFilter>();
 
 var app = builder.Build();
 

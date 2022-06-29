@@ -1,8 +1,13 @@
+using Application.Interfaces.Contexts;
+using Application.Visitors.GetTodayReport;
+using Persistence.Contexts.MongoContext;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddScoped<IGetTodayReportService, GetTodayReportService>();
+builder.Services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

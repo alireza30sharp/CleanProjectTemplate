@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]  - فروشگاه  </title>
+    <title>@ViewData["Title"]  - فروشگاه باگتو </title>
     <!-- font-awesome -->
      <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
     <!-- Bootstrap 4.5.3 -->
     <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
     <!-- CSS Implementing Plugins -->
-
     <link rel="stylesheet" href="~/assets/css/plugins/apexcharts.css">
     <link rel="stylesheet" href="~/assets/css/plugins/jquery.classycountdown.min.css">
     <link rel="stylesheet" href="~/assets/css/plugins/nouislider.min.css">
@@ -1343,6 +1342,11 @@
     <script src="~/assets/js/theme.js"></script>
     <!-- Here goes your custom.js -->
     <script src="~/assets/js/custom.js"></script>
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/SignalROnlineVisitorService.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
